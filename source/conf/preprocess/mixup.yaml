@@ -1,0 +1,3 @@
+name: continus_mixup
+continus: True
+alpha: 0.4  # Mixup强度参数，范围通常在0.1-1.0之间

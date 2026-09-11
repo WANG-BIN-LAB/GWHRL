@@ -1,0 +1,21 @@
+defaults:
+  - dataset: ABCD
+  - model: bnt # brainnetcnn, fbnetgen, bnt, transformer
+  - optimizer: adam
+  - training: basic_training
+  - datasz: 100p
+  - preprocess: mixup
+
+repeat_time: 5
+log_path: ../result
+save_learnable_graph: False
+
+# N折交叉验证配置
+n_splits: 5           # N折交叉验证的折数
+cv_epochs: 50        # 每折的训练轮数
+cv_lr: 0.0001          # 学习率
+
+
+# wandb
+wandb_entity: eggroup
+project: brainnetworktransformer
